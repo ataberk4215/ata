@@ -84,7 +84,7 @@
             </p>
           </div>
           <div class="stats">
-            <div class="stat"><strong data-count="2">0</strong><span>Proje</span></div>
+            <div class="stat"><strong data-count="6">0</strong><span>Proje</span></div>
             <div class="stat"><strong data-count="2">0</strong><span>Yıl Deneyim</span></div>
             <div class="stat"><strong data-count="5">0</strong><span>Teknoloji</span></div>
           </div>
@@ -129,13 +129,60 @@
     <section id="projeler" class="section">
       <div class="container">
         <h2 class="section__title reveal"><span>03.</span> Projeler</h2>
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">Tümü</button>
+          <button class="filter" data-filter="mobil">Mobil</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="oyun">Oyun</button>
+        </div>
         <div class="projects" id="projects">
-          <article class="project reveal" data-cat="web">
-            <div class="project__thumb" style="--c1:#f97316;--c2:#ef4444">🚀</div>
+          <article class="project reveal" data-cat="mobil">
+            <div class="project__thumb" style="--c1:#22c55e;--c2:#0ea5e9">⚽</div>
             <div class="project__body">
-              <h3>Roket Pakket Kurye Sistemi</h3>
-              <p>Kurye operasyonlarını yönetmek için geliştirdiğim sistem. Operasyonları takip etmek için bir yönetim paneli içeriyor. Uygulamayı test edip hatalarını ayıkladıktan sonra Versiyon 2'ye geçirdim.</p>
-              <ul class="tags tags--sm"><li>Kurye Sistemi</li><li>Yönetim Paneli</li><li>v2</li></ul>
+              <h3>FutConnect</h3>
+              <p>Mobil uygulama.</p>
+              <ul class="tags tags--sm"><li>Mobil</li></ul>
+              <div class="project__links">
+                <a href="https://futconnect.net" target="_blank" rel="noopener">Site →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="web oyun">
+            <div class="project__thumb" style="--c1:#a855f7;--c2:#ec4899">🌀</div>
+            <div class="project__body">
+              <h3>Savrul</h3>
+              <p>Tarayıcıdan oynanan web oyunu.</p>
+              <ul class="tags tags--sm"><li>Web</li><li>Oyun</li></ul>
+              <div class="project__links">
+                <a href="https://savrul.com" target="_blank" rel="noopener">Oyna →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="mobil oyun">
+            <div class="project__thumb" style="--c1:#eab308;--c2:#dc2626">🎰</div>
+            <div class="project__body">
+              <h3>Casino Kaos: Multiplayer</h3>
+              <p>Çok oyunculu mobil oyun.</p>
+              <ul class="tags tags--sm"><li>Mobil</li><li>Oyun</li><li>Multiplayer</li></ul>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="web oyun">
+            <div class="project__thumb" style="--c1:#f97316;--c2:#ef4444">📦</div>
+            <div class="project__body">
+              <h3>Paketnos</h3>
+              <p>Kurye sistemi: web platformu ve oyun.</p>
+              <ul class="tags tags--sm"><li>Web</li><li>Oyun</li><li>Kurye Sistemi</li></ul>
+              <div class="project__links">
+                <a href="https://paketnos.com" target="_blank" rel="noopener">Site →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="mobil">
+            <div class="project__thumb" style="--c1:#10b981;--c2:#84cc16">🌳</div>
+            <div class="project__body">
+              <h3>Mesire</h3>
+              <p>Mobil uygulama.</p>
+              <ul class="tags tags--sm"><li>Mobil</li></ul>
             </div>
           </article>
           <article class="project reveal" data-cat="web">

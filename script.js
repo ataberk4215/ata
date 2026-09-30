@@ -124,7 +124,7 @@ filters.forEach((btn) =>
     btn.classList.add("active");
     const cat = btn.dataset.filter;
     projects.forEach((p) => {
-      p.classList.toggle("hidden", cat !== "all" && p.dataset.cat !== cat);
+      p.classList.toggle("hidden", cat !== "all" && !p.dataset.cat.split(" ").includes(cat));
     });
   })
 );
