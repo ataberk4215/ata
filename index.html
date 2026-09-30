@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ata Berk | Portfolyo</title>
+  <meta name="description" content="Ata Berk'in kişisel portfolyo ve CV sitesi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+</head>
+<body>
+  <!-- ===== Navigasyon ===== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">ata<span>.</span>dev</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#yetenekler">Yetenekler</a>
+        <a href="#projeler">Projeler</a>
+        <a href="#deneyim">Deneyim</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Temayı değiştir">🌙</button>
+        <button class="icon-btn nav__burger" id="navBurger" aria-label="Menüyü aç">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Giriş ===== -->
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="hero__hello">Merhaba, ben 👋</p>
+          <h1 class="hero__name">Ata Berk</h1>
+          <h2 class="hero__role"><span id="typed"></span><span class="cursor">|</span></h2>
+          <p class="hero__desc">
+            Modern web teknolojileriyle hızlı, şık ve kullanıcı dostu uygulamalar geliştiriyorum.
+            Yeni şeyler öğrenmeyi ve fikirleri gerçeğe dönüştürmeyi seviyorum.
+          </p>
+          <div class="hero__cta">
+            <a href="#projeler" class="btn btn--primary">Projelerimi Gör</a>
+            <a href="#iletisim" class="btn btn--ghost">İletişime Geç</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/ataberk4215" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <a href="mailto:ornek@mail.com" aria-label="E-posta">E-posta</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="avatar">
+            <span>AB</span>
+          </div>
+          <div class="code-card">
+            <pre><code><span class="k">const</span> ata = {
+  rol: <span class="s">"Geliştirici"</span>,
+  konum: <span class="s">"Türkiye 🇹🇷"</span>,
+  seviyor: [<span class="s">"kod"</span>, <span class="s">"oyun"</span>, <span class="s">"☕"</span>],
+  müsait: <span class="k">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Hakkımda ===== -->
+    <section id="hakkimda" class="section">
+      <div class="container">
+        <h2 class="section__title reveal"><span>01.</span> Hakkımda</h2>
+        <div class="about reveal">
+          <div class="about__text">
+            <p>
+              Merhaba! Ben Ata Berk. Yazılıma olan ilgim, bilgisayar oyunlarının nasıl çalıştığını merak etmemle başladı.
+              Bugün web uygulamaları, otomasyon araçları ve botlar geliştiriyorum.
+            </p>
+            <p>
+              Temiz, okunabilir kod yazmaya ve kullanıcı deneyimine önem veriyorum.
+              Boş zamanlarımda oyun oynuyor, yeni teknolojileri deniyor ve açık kaynak projelere göz atıyorum.
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong data-count="10">0</strong><span>Proje</span></div>
+            <div class="stat"><strong data-count="2">0</strong><span>Yıl Deneyim</span></div>
+            <div class="stat"><strong data-count="5">0</strong><span>Teknoloji</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Yetenekler ===== -->
+    <section id="yetenekler" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal"><span>02.</span> Yetenekler</h2>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>🎨 Frontend</h3>
+            <ul class="tags">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li><li>Tailwind</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>⚙️ Backend</h3>
+            <ul class="tags">
+              <li>Node.js</li><li>Express</li><li>Python</li><li>REST API</li><li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>🛠️ Araçlar</h3>
+            <ul class="tags">
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>Linux</li><li>Figma</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bars reveal">
+          <div class="bar"><div class="bar__label"><span>JavaScript</span><span>85%</span></div><div class="bar__track"><div class="bar__fill" data-width="85"></div></div></div>
+          <div class="bar"><div class="bar__label"><span>HTML / CSS</span><span>90%</span></div><div class="bar__track"><div class="bar__fill" data-width="90"></div></div></div>
+          <div class="bar"><div class="bar__label"><span>Python</span><span>70%</span></div><div class="bar__track"><div class="bar__fill" data-width="70"></div></div></div>
+          <div class="bar"><div class="bar__label"><span>React</span><span>65%</span></div><div class="bar__track"><div class="bar__fill" data-width="65"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projeler ===== -->
+    <section id="projeler" class="section">
+      <div class="container">
+        <h2 class="section__title reveal"><span>03.</span> Projeler</h2>
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">Tümü</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="bot">Bot</button>
+          <button class="filter" data-filter="oyun">Oyun</button>
+        </div>
+        <div class="projects" id="projects">
+          <article class="project reveal" data-cat="web">
+            <div class="project__thumb" style="--c1:#6366f1;--c2:#22d3ee">🌐</div>
+            <div class="project__body">
+              <h3>Portfolyo Sitesi</h3>
+              <p>Şu an baktığın site! Saf HTML, CSS ve JavaScript ile yapılmış, karanlık/aydınlık tema destekli kişisel site.</p>
+              <ul class="tags tags--sm"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+              <div class="project__links">
+                <a href="https://github.com/ataberk4215/ata" target="_blank" rel="noopener">Kod →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="bot">
+            <div class="project__thumb" style="--c1:#5865f2;--c2:#a78bfa">🤖</div>
+            <div class="project__body">
+              <h3>Discord Botu</h3>
+              <p>Sunucu yönetimi, maç hatırlatıcıları ve eğlenceli komutlar sunan çok amaçlı bir Discord botu.</p>
+              <ul class="tags tags--sm"><li>Node.js</li><li>discord.js</li></ul>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Kod →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="oyun">
+            <div class="project__thumb" style="--c1:#f59e0b;--c2:#ef4444">🎮</div>
+            <div class="project__body">
+              <h3>CS2 İstatistik Paneli</h3>
+              <p>Steam API kullanarak oyuncu istatistiklerini grafiklerle gösteren bir dashboard.</p>
+              <ul class="tags tags--sm"><li>React</li><li>Steam API</li><li>Chart.js</li></ul>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Demo →</a>
+                <a href="#" target="_blank" rel="noopener">Kod →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="web">
+            <div class="project__thumb" style="--c1:#10b981;--c2:#84cc16">✅</div>
+            <div class="project__body">
+              <h3>Yapılacaklar Uygulaması</h3>
+              <p>Görevleri kategorilere ayırabildiğin, tarayıcıda kaydeden sade bir to-do uygulaması.</p>
+              <ul class="tags tags--sm"><li>JavaScript</li><li>LocalStorage</li></ul>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Demo →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="oyun">
+            <div class="project__thumb" style="--c1:#ec4899;--c2:#8b5cf6">🐍</div>
+            <div class="project__body">
+              <h3>Yılan Oyunu</h3>
+              <p>Canvas API ile yazılmış, skor tablosu olan klasik yılan oyunu.</p>
+              <ul class="tags tags--sm"><li>Canvas</li><li>JavaScript</li></ul>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Oyna →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="bot">
+            <div class="project__thumb" style="--c1:#0ea5e9;--c2:#14b8a6">✈️</div>
+            <div class="project__body">
+              <h3>Telegram Hava Durumu Botu</h3>
+              <p>Şehir adını yazınca anlık hava durumunu ve haftalık tahmini gönderen Telegram botu.</p>
+              <ul class="tags tags--sm"><li>Python</li><li>API</li></ul>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Kod →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Deneyim / Eğitim ===== -->
+    <section id="deneyim" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal"><span>04.</span> Deneyim & Eğitim</h2>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__date">2025 - Günümüz</span>
+            <h3>Freelance Web Geliştirici</h3>
+            <p>Küçük işletmeler ve bireyler için web siteleri ve otomasyon araçları geliştiriyorum.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date">2024 - 2025</span>
+            <h3>Stajyer Yazılım Geliştirici · Örnek Şirket</h3>
+            <p>Frontend ekibinde React bileşenleri geliştirdim, hata ayıklama ve test süreçlerinde yer aldım.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date">2022 - 2026</span>
+            <h3>Bilgisayar Mühendisliği · Örnek Üniversite</h3>
+            <p>Algoritmalar, veri yapıları, veritabanları ve web programlama dersleri.</p>
+          </li>
+        </ol>
+        <div class="center reveal">
+          <a href="#" class="btn btn--ghost" id="cvBtn">📄 CV'mi İndir</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== İletişim ===== -->
+    <section id="iletisim" class="section">
+      <div class="container contact">
+        <h2 class="section__title reveal"><span>05.</span> İletişim</h2>
+        <p class="contact__lead reveal">
+          Bir projen mi var, yoksa sadece merhaba mı demek istiyorsun? Mesaj göndermekten çekinme!
+        </p>
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label>
+              <span>Adın</span>
+              <input type="text" name="name" required placeholder="Adın Soyadın" />
+            </label>
+            <label>
+              <span>E-posta</span>
+              <input type="email" name="email" required placeholder="ornek@mail.com" />
+            </label>
+          </div>
+          <label>
+            <span>Mesajın</span>
+            <textarea name="message" rows="5" required placeholder="Merhaba Ata..."></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary">Gönder ✉️</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ata Berk · Sevgiyle ve ☕ ile yapıldı</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Yukarı çık">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
