@@ -3,267 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ata Berk | Portfolyo</title>
-  <meta name="description" content="Ata Berk'in kişisel portfolyo ve CV sitesi." />
+  <title>Ata Berk | Ürünler</title>
+  <meta name="description" content="Ata Berk: mobil uygulamalar, web platformları ve oyunlar." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23111'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='800' fill='white' text-anchor='middle'>A</text></svg>" />
 </head>
 <body>
-  <!-- ===== Navigasyon ===== -->
   <header class="nav">
-    <div class="container nav__inner">
-      <a href="#hero" class="nav__logo">ata<span>.</span>dev</a>
-      <nav class="nav__links" id="navLinks">
+    <div class="wrap nav__inner">
+      <a href="#top" class="logo">Ata Berk</a>
+      <nav class="nav__links">
+        <a href="#urunler">Ürünler</a>
         <a href="#hakkimda">Hakkımda</a>
-        <a href="#yetenekler">Yetenekler</a>
-        <a href="#projeler">Projeler</a>
-        <a href="#deneyim">Deneyim</a>
-        <a href="#iletisim">İletişim</a>
+        <a href="#iletisim" class="nav__cta">İletişim</a>
       </nav>
-      <div class="nav__actions">
-        <button class="icon-btn" id="themeToggle" aria-label="Temayı değiştir">🌙</button>
-        <button class="icon-btn nav__burger" id="navBurger" aria-label="Menüyü aç">☰</button>
-      </div>
+      <button class="theme" id="themeToggle" aria-label="Temayı değiştir"></button>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <!-- ===== Giriş ===== -->
-    <section id="hero" class="hero">
-      <div class="container hero__inner">
-        <div class="hero__text reveal">
-          <p class="hero__hello">Merhaba, ben 👋</p>
-          <h1 class="hero__name">Ata Berk</h1>
-          <h2 class="hero__role"><span id="typed"></span><span class="cursor">|</span></h2>
-          <p class="hero__desc">
-            Modern web teknolojileriyle hızlı, şık ve kullanıcı dostu uygulamalar geliştiriyorum.
-            Yeni şeyler öğrenmeyi ve fikirleri gerçeğe dönüştürmeyi seviyorum.
-          </p>
-          <div class="hero__cta">
-            <a href="#projeler" class="btn btn--primary">Projelerimi Gör</a>
-            <a href="#iletisim" class="btn btn--ghost">İletişime Geç</a>
+    <section class="hero wrap">
+      <p class="eyebrow">Geliştirici · Türkiye</p>
+      <h1>Mobil uygulamalar, web platformları ve oyunlar geliştiriyorum.</h1>
+      <p class="hero__lead">Geliştirdiğim ürünler aşağıda. Bir simgeye dokun, doğrudan o ürüne git.</p>
+
+      <ul class="dock" aria-label="Ürünler">
+        <li><a href="#futconnect" class="icon" style="--b1:#16a34a;--b2:#0ea5e9"><span>⚽</span></a><small>FutConnect</small></li>
+        <li><a href="#savrul" class="icon" style="--b1:#9333ea;--b2:#ec4899"><span>🌀</span></a><small>Savrul</small></li>
+        <li><a href="#casino-kaos" class="icon" style="--b1:#eab308;--b2:#dc2626"><span>🎰</span></a><small>Casino Kaos</small></li>
+        <li><a href="#paketnos" class="icon" style="--b1:#f97316;--b2:#e11d48"><span>📦</span></a><small>Paketnos</small></li>
+        <li><a href="#mesire" class="icon" style="--b1:#059669;--b2:#65a30d"><span>🌳</span></a><small>Mesire</small></li>
+      </ul>
+    </section>
+
+    <!-- ===== Ürünler ===== -->
+    <!--
+      Ekran görüntüsü eklemek için images/ klasörüne ürün adıyla görsel koy
+      (ör. images/futconnect.png). Görsel yoksa marka renkli açılış ekranı görünür.
+    -->
+    <section id="urunler" class="products">
+      <article id="futconnect" class="product" style="--b1:#16a34a;--b2:#0ea5e9">
+        <div class="wrap product__inner">
+          <div class="product__text">
+            <span class="badge">Mobil uygulama</span>
+            <h3>FutConnect</h3>
+            <p>Mobil uygulama.</p>
+            <div class="product__links">
+              <a href="https://futconnect.net" target="_blank" rel="noopener" class="btn btn--brand">futconnect.net ↗</a>
+            </div>
           </div>
-          <div class="socials">
-            <a href="https://github.com/ataberk4215" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-            <a href="mailto:ornek@mail.com" aria-label="E-posta">E-posta</a>
+          <div class="product__visual">
+            <div class="phone"><div class="phone__screen">
+              <img src="images/futconnect.png" alt="FutConnect ekran görüntüsü" onerror="this.remove()" />
+              <div class="splash"><span class="icon icon--lg"><span>⚽</span></span><strong>FutConnect</strong></div>
+            </div></div>
           </div>
         </div>
-        <div class="hero__visual reveal">
-          <div class="avatar">
-            <span>AB</span>
+      </article>
+
+      <article id="savrul" class="product product--flip" style="--b1:#9333ea;--b2:#ec4899">
+        <div class="wrap product__inner">
+          <div class="product__text">
+            <span class="badge">Web oyun</span>
+            <h3>Savrul</h3>
+            <p>Tarayıcıdan oynanan web oyunu. İndirmeden, doğrudan siteden oynanıyor.</p>
+            <div class="product__links">
+              <a href="https://savrul.com" target="_blank" rel="noopener" class="btn btn--brand">Hemen oyna ↗</a>
+            </div>
           </div>
-          <div class="code-card">
-            <pre><code><span class="k">const</span> ata = {
-  rol: <span class="s">"Geliştirici"</span>,
-  konum: <span class="s">"Türkiye 🇹🇷"</span>,
-  seviyor: [<span class="s">"kod"</span>, <span class="s">"oyun"</span>, <span class="s">"☕"</span>],
-  müsait: <span class="k">true</span>
-};</code></pre>
+          <div class="product__visual">
+            <div class="browser">
+              <div class="browser__bar"><i></i><i></i><i></i><span>savrul.com</span></div>
+              <div class="browser__screen">
+                <img src="images/savrul.png" alt="Savrul ekran görüntüsü" onerror="this.remove()" />
+                <div class="splash"><span class="icon icon--lg"><span>🌀</span></span><strong>Savrul</strong></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
+
+      <article id="casino-kaos" class="product" style="--b1:#eab308;--b2:#dc2626">
+        <div class="wrap product__inner">
+          <div class="product__text">
+            <span class="badge">Mobil oyun · Multiplayer</span>
+            <h3>Casino Kaos: Multiplayer</h3>
+            <p>Çok oyunculu mobil oyun.</p>
+          </div>
+          <div class="product__visual">
+            <div class="phone"><div class="phone__screen">
+              <img src="images/casino-kaos.png" alt="Casino Kaos ekran görüntüsü" onerror="this.remove()" />
+              <div class="splash"><span class="icon icon--lg"><span>🎰</span></span><strong>Casino Kaos</strong><small>Multiplayer</small></div>
+            </div></div>
+          </div>
+        </div>
+      </article>
+
+      <article id="paketnos" class="product product--flip" style="--b1:#f97316;--b2:#e11d48">
+        <div class="wrap product__inner">
+          <div class="product__text">
+            <span class="badge">Web & mobil uygulama</span>
+            <h3>Paketnos</h3>
+            <p>Kurye sistemi. Bir web platformu ve bir mobil uygulamadan oluşuyor.</p>
+            <div class="product__links">
+              <a href="https://paketnos.com" target="_blank" rel="noopener" class="btn btn--brand">paketnos.com ↗</a>
+            </div>
+          </div>
+          <div class="product__visual product__visual--combo">
+            <div class="browser">
+              <div class="browser__bar"><i></i><i></i><i></i><span>paketnos.com</span></div>
+              <div class="browser__screen">
+                <img src="images/paketnos-web.png" alt="Paketnos web ekran görüntüsü" onerror="this.remove()" />
+                <div class="splash"><span class="icon icon--lg"><span>📦</span></span><strong>Paketnos</strong></div>
+              </div>
+            </div>
+            <div class="phone phone--sm"><div class="phone__screen">
+              <img src="images/paketnos-app.png" alt="Paketnos uygulama ekran görüntüsü" onerror="this.remove()" />
+              <div class="splash"><span class="icon"><span>📦</span></span></div>
+            </div></div>
+          </div>
+        </div>
+      </article>
+
+      <article id="mesire" class="product" style="--b1:#059669;--b2:#65a30d">
+        <div class="wrap product__inner">
+          <div class="product__text">
+            <span class="badge">Mobil uygulama</span>
+            <h3>Mesire</h3>
+            <p>Mobil uygulama.</p>
+          </div>
+          <div class="product__visual">
+            <div class="phone"><div class="phone__screen">
+              <img src="images/mesire.png" alt="Mesire ekran görüntüsü" onerror="this.remove()" />
+              <div class="splash"><span class="icon icon--lg"><span>🌳</span></span><strong>Mesire</strong></div>
+            </div></div>
+          </div>
+        </div>
+      </article>
     </section>
 
     <!-- ===== Hakkımda ===== -->
-    <section id="hakkimda" class="section">
-      <div class="container">
-        <h2 class="section__title reveal"><span>01.</span> Hakkımda</h2>
-        <div class="about reveal">
-          <div class="about__text">
-            <p>
-              Merhaba! Ben Ata Berk. Yazılıma olan ilgim, bilgisayar oyunlarının nasıl çalıştığını merak etmemle başladı.
-              Bugün web uygulamaları, otomasyon araçları ve botlar geliştiriyorum.
-            </p>
-            <p>
-              Temiz, okunabilir kod yazmaya ve kullanıcı deneyimine önem veriyorum.
-              Boş zamanlarımda oyun oynuyor, yeni teknolojileri deniyor ve açık kaynak projelere göz atıyorum.
-            </p>
-          </div>
-          <div class="stats">
-            <div class="stat"><strong data-count="6">0</strong><span>Proje</span></div>
-            <div class="stat"><strong data-count="2">0</strong><span>Yıl Deneyim</span></div>
-            <div class="stat"><strong data-count="5">0</strong><span>Teknoloji</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Yetenekler ===== -->
-    <section id="yetenekler" class="section section--alt">
-      <div class="container">
-        <h2 class="section__title reveal"><span>02.</span> Yetenekler</h2>
-        <div class="skills">
-          <div class="skill-group reveal">
-            <h3>🎨 Frontend</h3>
-            <ul class="tags">
-              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li><li>Tailwind</li>
-            </ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>⚙️ Backend</h3>
-            <ul class="tags">
-              <li>Node.js</li><li>Express</li><li>Python</li><li>REST API</li><li>SQL</li>
-            </ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>🛠️ Araçlar</h3>
-            <ul class="tags">
-              <li>Git</li><li>GitHub</li><li>VS Code</li><li>Linux</li><li>Figma</li>
-            </ul>
-          </div>
-        </div>
-        <div class="bars reveal">
-          <div class="bar"><div class="bar__label"><span>JavaScript</span><span>85%</span></div><div class="bar__track"><div class="bar__fill" data-width="85"></div></div></div>
-          <div class="bar"><div class="bar__label"><span>HTML / CSS</span><span>90%</span></div><div class="bar__track"><div class="bar__fill" data-width="90"></div></div></div>
-          <div class="bar"><div class="bar__label"><span>Python</span><span>70%</span></div><div class="bar__track"><div class="bar__fill" data-width="70"></div></div></div>
-          <div class="bar"><div class="bar__label"><span>React</span><span>65%</span></div><div class="bar__track"><div class="bar__fill" data-width="65"></div></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Projeler ===== -->
-    <section id="projeler" class="section">
-      <div class="container">
-        <h2 class="section__title reveal"><span>03.</span> Projeler</h2>
-        <div class="filters reveal" id="filters">
-          <button class="filter active" data-filter="all">Tümü</button>
-          <button class="filter" data-filter="mobil">Mobil</button>
-          <button class="filter" data-filter="web">Web</button>
-          <button class="filter" data-filter="oyun">Oyun</button>
-        </div>
-        <div class="projects" id="projects">
-          <article class="project reveal" data-cat="mobil">
-            <div class="project__thumb" style="--c1:#22c55e;--c2:#0ea5e9">⚽</div>
-            <div class="project__body">
-              <h3>FutConnect</h3>
-              <p>Mobil uygulama.</p>
-              <ul class="tags tags--sm"><li>Mobil</li></ul>
-              <div class="project__links">
-                <a href="https://futconnect.net" target="_blank" rel="noopener">Site →</a>
-              </div>
-            </div>
-          </article>
-          <article class="project reveal" data-cat="web oyun">
-            <div class="project__thumb" style="--c1:#a855f7;--c2:#ec4899">🌀</div>
-            <div class="project__body">
-              <h3>Savrul</h3>
-              <p>Tarayıcıdan oynanan web oyunu.</p>
-              <ul class="tags tags--sm"><li>Web</li><li>Oyun</li></ul>
-              <div class="project__links">
-                <a href="https://savrul.com" target="_blank" rel="noopener">Oyna →</a>
-              </div>
-            </div>
-          </article>
-          <article class="project reveal" data-cat="mobil oyun">
-            <div class="project__thumb" style="--c1:#eab308;--c2:#dc2626">🎰</div>
-            <div class="project__body">
-              <h3>Casino Kaos: Multiplayer</h3>
-              <p>Çok oyunculu mobil oyun.</p>
-              <ul class="tags tags--sm"><li>Mobil</li><li>Oyun</li><li>Multiplayer</li></ul>
-            </div>
-          </article>
-          <article class="project reveal" data-cat="web mobil">
-            <div class="project__thumb" style="--c1:#f97316;--c2:#ef4444">📦</div>
-            <div class="project__body">
-              <h3>Paketnos</h3>
-              <p>Kurye sistemi: web platformu ve mobil uygulama.</p>
-              <ul class="tags tags--sm"><li>Web</li><li>Mobil</li><li>Kurye Sistemi</li></ul>
-              <div class="project__links">
-                <a href="https://paketnos.com" target="_blank" rel="noopener">Site →</a>
-              </div>
-            </div>
-          </article>
-          <article class="project reveal" data-cat="mobil">
-            <div class="project__thumb" style="--c1:#10b981;--c2:#84cc16">🌳</div>
-            <div class="project__body">
-              <h3>Mesire</h3>
-              <p>Mobil uygulama.</p>
-              <ul class="tags tags--sm"><li>Mobil</li></ul>
-            </div>
-          </article>
-          <article class="project reveal" data-cat="web">
-            <div class="project__thumb" style="--c1:#6366f1;--c2:#22d3ee">🌐</div>
-            <div class="project__body">
-              <h3>Portfolyo Sitesi</h3>
-              <p>Şu an baktığın site! Saf HTML, CSS ve JavaScript ile yapılmış, karanlık/aydınlık tema destekli kişisel site. GitHub Pages'te yayında.</p>
-              <ul class="tags tags--sm"><li>HTML</li><li>CSS</li><li>JS</li></ul>
-              <div class="project__links">
-                <a href="https://ataberk4215.github.io/ata/" target="_blank" rel="noopener">Site →</a>
-                <a href="https://github.com/ataberk4215/ata" target="_blank" rel="noopener">Kod →</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Deneyim / Eğitim ===== -->
-    <section id="deneyim" class="section section--alt">
-      <div class="container">
-        <h2 class="section__title reveal"><span>04.</span> Deneyim & Eğitim</h2>
-        <ol class="timeline">
-          <li class="timeline__item reveal">
-            <span class="timeline__date">2025 - Günümüz</span>
-            <h3>Freelance Web Geliştirici</h3>
-            <p>Küçük işletmeler ve bireyler için web siteleri ve otomasyon araçları geliştiriyorum.</p>
-          </li>
-          <li class="timeline__item reveal">
-            <span class="timeline__date">2024 - 2025</span>
-            <h3>Stajyer Yazılım Geliştirici · Örnek Şirket</h3>
-            <p>Frontend ekibinde React bileşenleri geliştirdim, hata ayıklama ve test süreçlerinde yer aldım.</p>
-          </li>
-          <li class="timeline__item reveal">
-            <span class="timeline__date">2022 - 2026</span>
-            <h3>Bilgisayar Mühendisliği · Örnek Üniversite</h3>
-            <p>Algoritmalar, veri yapıları, veritabanları ve web programlama dersleri.</p>
-          </li>
-        </ol>
-        <div class="center reveal">
-          <a href="#" class="btn btn--ghost" id="cvBtn">📄 CV'mi İndir</a>
-        </div>
+    <section id="hakkimda" class="about wrap">
+      <h2 class="section-title">Hakkımda</h2>
+      <div class="about__grid">
+        <p class="about__lead">
+          Kendi ürünlerimi geliştiriyorum: mobil uygulamalar, bir kurye sistemi, hem tarayıcıda hem telefonda oynanan oyunlar.
+        </p>
+        <dl class="facts">
+          <div><dt>5</dt><dd>ürün</dd></div>
+          <div><dt>4</dt><dd>mobil uygulama ve oyun</dd></div>
+          <div><dt>2</dt><dd>web platformu</dd></div>
+        </dl>
       </div>
     </section>
 
     <!-- ===== İletişim ===== -->
-    <section id="iletisim" class="section">
-      <div class="container contact">
-        <h2 class="section__title reveal"><span>05.</span> İletişim</h2>
-        <p class="contact__lead reveal">
-          Bir projen mi var, yoksa sadece merhaba mı demek istiyorsun? Mesaj göndermekten çekinme!
-        </p>
-        <form class="form reveal" id="contactForm" novalidate>
-          <div class="form__row">
-            <label>
-              <span>Adın</span>
-              <input type="text" name="name" required placeholder="Adın Soyadın" />
-            </label>
-            <label>
-              <span>E-posta</span>
-              <input type="email" name="email" required placeholder="ornek@mail.com" />
-            </label>
-          </div>
-          <label>
-            <span>Mesajın</span>
-            <textarea name="message" rows="5" required placeholder="Merhaba Ata..."></textarea>
-          </label>
-          <button type="submit" class="btn btn--primary">Gönder ✉️</button>
-          <p class="form__status" id="formStatus" role="status"></p>
-        </form>
+    <section id="iletisim" class="contact">
+      <div class="wrap contact__inner">
+        <h2>Birlikte bir şey yapalım.</h2>
+        <p>Bir fikrin, iş teklifin ya da sorun varsa yaz.</p>
+        <div class="contact__links">
+          <a href="mailto:ornek@mail.com" class="btn btn--light">E-posta gönder</a>
+          <a href="https://github.com/ataberk4215" target="_blank" rel="noopener" class="btn btn--ghost-light">GitHub ↗</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Ata Berk · Sevgiyle ve ☕ ile yapıldı</p>
-    </div>
+  <footer class="footer wrap">
+    <span>© <span id="year"></span> Ata Berk</span>
+    <a href="#top">Başa dön ↑</a>
   </footer>
-
-  <button class="to-top" id="toTop" aria-label="Yukarı çık">↑</button>
 
   <script src="script.js"></script>
 </body>
